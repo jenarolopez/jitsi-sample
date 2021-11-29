@@ -15,11 +15,12 @@ const App = () => {
   return onCall
     ? (
       <Jitsi
-        containerStyle={{ width: '1200px', height: '800px' }}
+        containerStyle={{ width: '100vw', height: '100vh' }}
         roomName={roomName}
         displayName={displayName}
         password={password}
         config={config}
+        domain={`jitsi.pro-solutions.technology`}
         onAPILoad={JitsiMeetAPI => console.log('Good Morning everyone!')}
       />)
     : (
